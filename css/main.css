@@ -22426,4 +22426,23 @@ p.display-4 {
   box-shadow: 0 1px 0px 0px black;
 }
 
+.buttons-tags--flex {
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+}
+
+.search-w {
+  width: 14rem;
+}
+
+.stick-to-bottom {
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 575.98px) {
+  .stick-to-bottom {
+    position: static;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

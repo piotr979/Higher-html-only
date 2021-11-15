@@ -97,4 +97,20 @@ h3 {
 .nav-link:hover {
     box-shadow: 0 1px 0px 0px black;
 }
+.buttons-tags--flex {
+    column-gap: .5rem;
+    row-gap: 1rem;
+}
+.search-w {
+    width: 14rem;
+}
+.stick-to-bottom {
+    position: absolute;
+    bottom: 0;
 
+    @include media-breakpoint-down(sm) {
+       position: static;
+       
+    }
+   
+}
