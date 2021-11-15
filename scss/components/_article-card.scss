@@ -1,0 +1,46 @@
+.article-card {
+    background-color: $back-light-1;
+    border-bottom-width: 14px;
+    border-bottom-style: solid;
+}
+.article-card:hover {
+    background-color: darken($back-light-1, 2%);
+}
+.border-color-1 {
+    border-bottom-color: $article-border-1;
+}
+.article-card:hover.border-color-1 {
+    border-bottom-color: darken($article-border-1, 20%);
+}
+.border-color-2 {
+    border-color: $article-border-2;
+}
+.article-card:hover.border-color-2 {
+    border-bottom-color: darken($article-border-2, 20%);
+}
+.border-color-3 {
+    border-color: $article-border-3
+}
+.article-card:hover.border-color-3 {
+    border-bottom-color: darken($article-border-3, 20%);
+}
+.border-color-4 {
+    border-color: $article-border-4;
+}
+.article-card:hover.border-color-4 {
+    border-bottom-color: darken($article-border-4, 20%);
+}
+
+.article-card--author, .article-card--tags {
+    font-size: .8rem;
+    font-weight: bold;
+}
+.article-card--image {
+    width: 125px;
+    height: 125px;
+    border-radius: 8px;
+}
+.article-card--link {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,100 @@
+@import '../node_modules/animate.css/animate.css';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+$navbar-light-color: rgba($black, .9);
+$navbar-light-active-color: $blue;
+
+@import 'abstract/variables';
+@import 'abstract/typography';
+
+@import 'components/article-card';
+@import 'navigation/boostrap_modifications.scss';
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+   flex-direction: row;
+}
+.logo img {
+    position: relative;
+    top: .2rem;
+}
+.logo-name h4 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.logo-name p {
+    font-size: .8rem;
+}
+.slider-full {
+    background: url('../images/slide-background.png') repeat;
+}
+p.display-4 {
+    padding-top: .5rem;
+    line-height: .6;
+    @include media-breakpoint-down(xl) {
+     font-size: 2rem;
+    }
+}
+h3 {
+    @include media-breakpoint-down(xl) {
+        font-size: 1.2rem;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+.list--badges {
+    @include media-breakpoint-only(sm) {
+        display: none;
+    }
+}
+
+
+.slide-full-sm {
+    width: 75%;
+    height: auto;
+    padding-top: 4rem;
+    @include media-breakpoint-down(xl) {
+        width: 90%;
+        padding-top: 2rem;
+     }
+    @include media-breakpoint-down(lg) {
+        width: 90%;
+     
+     }
+    @include media-breakpoint-down(md) {
+        width: 75%;
+        padding-top: 2rem;
+     }
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+       
+        height: auto;
+    }
+}
+.hover-shadow {
+    transition: all .4s;
+}
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px #EEE;
+}
+.up-on-hover {
+    transition: all .4s;
+}
+.up-on-hover :hover {
+    transform: translateY(-4px);
+}
+.nav-link {
+    transition: all .4s;
+}
+.nav-link:hover {
+    box-shadow: 0 1px 0px 0px black;
+}
+
