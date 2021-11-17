@@ -10,9 +10,14 @@ $navbar-light-active-color: $blue;
 @import 'abstract/typography';
 
 @import 'components/article-card';
+@import 'components/color-picker';
 @import 'navigation/boostrap_modifications.scss';
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+body {
+    min-height: 100vh;
+    display:flex; 
+    flex-direction:column; 
+}
 a:link,
 a:visited {
     text-decoration: none;
@@ -35,11 +40,14 @@ a:visited {
 .slider-full {
     background: url('../images/slide-background.png') repeat;
 }
-p.display-4 {
+p.display-4-slide {
     padding-top: .5rem;
     line-height: .6;
     @include media-breakpoint-down(xl) {
-     font-size: 2rem;
+        font-size: 2rem;
+    }
+    @include media-breakpoint-down(lg) {
+     font-size: 1.8rem;
     }
 }
 h3 {
@@ -55,9 +63,7 @@ h3 {
         display: none;
     }
 }
-
-
-.slide-full-sm {
+.slide-full {
     width: 75%;
     height: auto;
     padding-top: 4rem;
@@ -104,13 +110,6 @@ h3 {
 .search-w {
     width: 14rem;
 }
-.stick-to-bottom {
-    position: absolute;
-    bottom: 0;
-
-    @include media-breakpoint-down(sm) {
-       position: static;
-       
-    }
-   
+.super-small {
+    font-size: .8rem;
 }

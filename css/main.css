@@ -11181,6 +11181,52 @@ textarea.form-control-lg {
   color: black;
 }
 
+.color-picker-block {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.color-picker-color-1 {
+  background-color: #CFE2FF;
+}
+
+.color-picker-color-2 {
+  background-color: #FFF3CD;
+}
+
+.color-picker-color-3 {
+  background-color: #D2F4EA;
+}
+
+.color-picker-color-4 {
+  background-color: #F8D7DA;
+}
+
+label.color-picker {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  transition: transform 0.4s;
+}
+
+label.color-picker:hover {
+  transform: scale(1.2);
+}
+
+.color-picker--wrapper input[type=radio] {
+  display: none;
+}
+
+.color-picker--wrapper input[type=radio] {
+  display: none;
+}
+.color-picker--wrapper input[type=radio]:checked + span {
+  border: 2px solid #ccc;
+  transform: scale(1.5);
+}
+
 .navbar-brand {
   display: inline-block;
 }
@@ -22318,6 +22364,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -22346,13 +22398,18 @@ a:visited {
   background: url("../images/slide-background.png") repeat;
 }
 
-p.display-4 {
+p.display-4-slide {
   padding-top: 0.5rem;
   line-height: 0.6;
 }
 @media (max-width: 1199.98px) {
-  p.display-4 {
+  p.display-4-slide {
     font-size: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
+  p.display-4-slide {
+    font-size: 1.8rem;
   }
 }
 
@@ -22373,30 +22430,30 @@ p.display-4 {
   }
 }
 
-.slide-full-sm {
+.slide-full {
   width: 75%;
   height: auto;
   padding-top: 4rem;
 }
 @media (max-width: 1199.98px) {
-  .slide-full-sm {
+  .slide-full {
     width: 90%;
     padding-top: 2rem;
   }
 }
 @media (max-width: 991.98px) {
-  .slide-full-sm {
+  .slide-full {
     width: 90%;
   }
 }
 @media (max-width: 767.98px) {
-  .slide-full-sm {
+  .slide-full {
     width: 75%;
     padding-top: 2rem;
   }
 }
 @media (max-width: 575.98px) {
-  .slide-full-sm {
+  .slide-full {
     width: 100%;
     height: auto;
   }
@@ -22435,14 +22492,8 @@ p.display-4 {
   width: 14rem;
 }
 
-.stick-to-bottom {
-  position: absolute;
-  bottom: 0;
-}
-@media (max-width: 575.98px) {
-  .stick-to-bottom {
-    position: static;
-  }
+.super-small {
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
