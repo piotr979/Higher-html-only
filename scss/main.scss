@@ -113,3 +113,25 @@ h3 {
 .super-small {
     font-size: .8rem;
 }
+.aside-filters {
+    @include media-breakpoint-down(lg) {
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background-color: white;
+            height: 100vh;
+            width: 100%;
+            padding-top: 4rem;
+    }
+}
+.nav-open {
+    display: block;
+}
+.aside-filters__button-wrapper, .cta-filters-show {
+   display: block;
+   @include media-breakpoint-up(lg) {
+       display: none;
+   }
+}

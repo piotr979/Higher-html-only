@@ -11231,16 +11231,6 @@ label.color-picker:hover {
   display: inline-block;
 }
 
-.align-to-nav {
-  margin-top: 0rem;
-  margin-left: 4rem;
-}
-@media (max-width: 575.98px) {
-  .align-to-nav {
-    margin-left: 0;
-  }
-}
-
 .bg-custom {
   background-color: #F3F9FF;
 }
@@ -22494,6 +22484,33 @@ p.display-4-slide {
 
 .super-small {
   font-size: 0.8rem;
+}
+
+@media (max-width: 991.98px) {
+  .aside-filters {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    padding-top: 4rem;
+  }
+}
+
+.nav-open {
+  display: block;
+}
+
+.aside-filters__button-wrapper, .cta-filters-show {
+  display: block;
+}
+@media (min-width: 992px) {
+  .aside-filters__button-wrapper, .cta-filters-show {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

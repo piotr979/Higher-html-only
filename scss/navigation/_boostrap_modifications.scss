@@ -2,14 +2,6 @@
     display: inline-block;
    
 }
-.align-to-nav {
-    margin-top: 0rem;
-    margin-left: 4rem;
-    @include media-breakpoint-only(xs) {
-        margin-left: 0;
-       
-    }
-}
 .bg-custom {
     background-color: $topnav-color;
 }
